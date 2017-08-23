@@ -1,0 +1,27 @@
+i.material-icons {
+    position: relative;
+    display: inline-block;
+    top: 2%;
+}
+
+label.active {
+    position: relative;
+    display: inline-block;
+}
+
+.container {
+    position: relative;
+    top: 10vh;
+    border-radius: 5%;
+    border: 2px solid #3AB795;
+    padding: 5%;
+    box-shadow: 5px 5px 5px #75B9BE;
+}
+
+#back {
+    margin: 0% 0% 0% 2%; 
+}
+
+.filler {
+    margin: 2%;
+}

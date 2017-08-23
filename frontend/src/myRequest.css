@@ -1,0 +1,100 @@
+ #submit {
+     margin: 2%;
+     top: 5vh;
+     right: -30%;
+     display: inline;
+     position: relative;
+ }
+
+ #menu {
+     position: relative;
+     left: 83%;
+     margin: 1%;
+     top: 50px;
+ }
+
+ #hour {
+     position: relative;
+     display: inline-block;
+ }
+
+ #min {
+     position: relative;
+     display: inline-block;
+ }
+
+ #ampm {
+     position: relative;
+     display: inline-block;
+ }
+
+ #start {
+     position: relative;
+     display: inline-block;
+ }
+
+ #end {
+     position: relative;
+     display: inline-block;
+ }
+
+ .time {
+     text-shadow: 1px black;
+ }
+
+ .bigBox {
+     margin: 0% 5% 0% 5%;
+     box-shadow: 5px 5px 5px #A8CCC9;
+     border: 2px solid #75B9BE;
+     padding: 2% 2% 3% 2%;
+     border-radius: 1%;
+ }
+
+ #icon {
+     position: relative;
+     display: inline-block;
+     top: 0.7vw;
+ }
+
+ p {
+     position: relative;
+     display: inline-block;
+ }
+
+ .timeSpot {
+     text-align: left;
+ }
+
+ .blob {
+     position: relative;
+     display: inline-block;
+     width: 40%;
+     padding: 2%;
+ }
+
+ .calendar {
+     position: relative;
+     display: inline-block;
+     text-align: left;
+ }
+
+ #special {
+     position: relative;
+     display: inline-block;
+ }
+
+ #specialRequest {
+     width: 250%;
+     height:20vh;
+     box-shadow: 5px 5px 5px #3AB795;
+     border-radius: 50% #87BBA2;
+     border: 1px 
+ }
+
+  body {
+     margin: 2% 0% 2% 0%;
+ } 
+
+ /* i.material-icons {
+     top: -10px;
+ } */

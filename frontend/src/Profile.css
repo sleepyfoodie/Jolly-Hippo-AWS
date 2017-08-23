@@ -1,0 +1,115 @@
+#verified {
+    color: green
+}
+#notVerified {
+    color: red
+}
+
+.profilePic {
+	border-radius:80%; 
+    margin: -10% -10% 2% 2%; 
+    /* margin: -4% 0% -5% 2%; */
+    overflow: hidden;
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+}
+
+ .profile {
+    margin: 5% 0% 2% 18%;
+    position: relative;
+    display: inline-block;
+} 
+
+.profilePic:hover {
+  animation: shake 0.52s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+img {
+    width: 100%;
+}
+
+#dropdown {
+    margin: 2% 2% 0% 0%;
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+i.material-icons.small {
+    top: 3px;
+    position: relative;
+}
+
+ /* button.btn.dropdown-button {
+     opacity: 1.0; 
+}  */
+
+.profileBox {
+    box-shadow: 8px 8px 5px #888888;
+    margin: 2%;
+    padding: 2%;
+    /* background-image: url("./Images/cat-wallpaper.png"); */
+    opacity: 0.8;
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%; */
+    background: linear-gradient(to right, #a8ccc9 , white);
+    /* background-color: #b2b2b2; */
+    color: #00241b;
+    border-radius: 3%;
+    font-size: 3.0vh;
+    text-shadow: 3px 3px 5px #a8ccc9;
+    font-family: 'Patrick Hand SC', cursive;
+    box-shadow: 0px 0px 30px #d5d3d3, 0px 0px 30px #d5d3d3;
+}
+
+.commentBox {
+    box-shadow: 8px 8px 5px #888888;
+    margin: 2%;
+    padding: 2%;
+     background-image: url("./Images/cat-wallpaper.png"); 
+    opacity: 0.8;
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%; 
+    /* background: linear-gradient(to right, #a8ccc9 , white); */
+     background-color: #b2b2b2; 
+    color: #00241b;
+    border-radius: 3%;
+    font-size: 3.0vh;
+    text-shadow: 3px 3px 5px #a8ccc9;
+    font-family: 'Patrick Hand SC', cursive;
+    box-shadow: 0px 0px 30px #d5d3d3, 0px 0px 30px #d5d3d3;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 500%;
+}
