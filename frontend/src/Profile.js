@@ -82,6 +82,9 @@ class Profile extends Component {
                             <NavItem>
                                 <Link to="/mylist">All Requests</Link>
                             </NavItem>
+                            <NavItem onClick={this.clear}>
+                                Sign Out
+                            </NavItem>
                         </Dropdown>
                     </div>
                     <div
