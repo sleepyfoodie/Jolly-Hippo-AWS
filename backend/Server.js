@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const User = require('./models/users');
 const Request = require('./models/requests');
 
+//for deploy
 const path = require('path');
 
 app.use((req, res, next) => {
@@ -226,11 +227,13 @@ app.get('/requests', (req, res) => {
 // 		})
 // });
 
+
+//also for deploy
 app.get("*", (req,res) => {
     res.sendFile(path.resolve(__dirname+"./../frontend/build/index.html"))
 })
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log('SERVER RUNNING ON 8080');
 })
 
