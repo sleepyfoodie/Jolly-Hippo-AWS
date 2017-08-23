@@ -1,1 +1,1 @@
-node backend/Server.js
+node ./backend/Server.js
