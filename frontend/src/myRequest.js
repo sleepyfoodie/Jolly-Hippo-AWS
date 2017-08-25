@@ -26,6 +26,14 @@ class myRequest extends Component {
         }
         this.submit = this.submit.bind(this)
         this.handleChange = this.handleChange.bind(this)
+        this.clear = this.clear.bind(this)
+    }
+
+    clear() {
+        localStorage.setItem("name","")
+        localStorage.setItem("email","")
+        this.props.router.push("/")
+        
     }
 
     submit(e) {
@@ -80,15 +88,15 @@ class myRequest extends Component {
                     <NavItem>
                         <Link to="/myhours">my Hours</Link>
                     </NavItem>
-                    <NavItem>
-                        <Link to="/acceptedRequest">my Requests</Link>
-                    </NavItem>
                     <NavItem divider />
                     <NavItem>
                         <Link to="/myrequest">Create Requests</Link>
                     </NavItem>
                     <NavItem>
                         <Link to="/mylist">All Requests</Link>
+                    </NavItem>
+                    <NavItem onClick={this.clear}>
+                        Logout
                     </NavItem>
                 </Dropdown>
                 <div className="bigBox">
@@ -323,7 +331,7 @@ class myRequest extends Component {
                         <p>5) Please give a brief descriptio of your kids in the comment section. Remember, the more parents can know about your child's personality, the higher likelihood they will take on a request.</p>
                         <p>6) You may also submit any special requests or comments below.</p>
                         <p>7) Click <Icon>wb_sunny</Icon>"SUBMIT" on form and wait for confirmation</p>
-                        <Button onClick={this.props.toProfile}>cancel</Button>
+                        <Button id="cancel" onClick={this.props.toProfile}>cancel</Button>
                     </div>
                 </div>
 

@@ -49,12 +49,10 @@ app.post('/requests',(req,res) => {
 
 //POST REQUEST SIGN IN PAGE
 app.post('/users', (req, res) => {
-    console.log('req body' , req.body)
     User.find({email:req.body.email})
         .then(object => {
             if (object[0].password === req.body.password) {
                 res.json(object[0]);
-                console.log("matching!")
             }
             else {
                 res.send({ match: false });
@@ -74,7 +72,6 @@ app.post('/users/signup', (req,res) => {
         .then(object => {
             if (object.length !== 0) {
                 res.send({userExist: true});
-                console.log("email exist already")
             }
             else {
                 newUser.save()
@@ -94,36 +91,28 @@ app.post('/users/signup', (req,res) => {
         })
 })
 
-    
-
-//postal code clean up
+//
 const postal = "v6p 5l7";
 const code = postal.split("");
-console.log(code);
 let index
 for (let i = 0; i < code.length; i++) {
     if (code[i] == " ") {
         index = i
-        console.log("i is now " + index)
         code.splice(index, 1)
     };
 };
-console.log(code);
-// still test mode
-// let newCode
-// function upperCase() {
-//     var newCode = code.toUpperCase()
-//     console.logl(newCode, " is working");
-// }
-// upperCase();
+function upperCase(param) {
+    var newCode = param.toUpperCase()
+    return newCode
+}
+console.log(upperCase(code));
+
 
 
 //GET REQUEST for populating profile page
 app.get('/users/:email', (req, res) => {
-    console.log('req body' , req.body)
     User.find({email:req.params.email})
         .then(object => {
-            console.log(object)
                 res.json(object);
         })
         .catch(err => {
@@ -148,23 +137,6 @@ app.get('/requests', (req, res) => {
 });
 
 
-
-// GET (ALL) REQUEST
-// app.get('/cars', (req,res) => {
-// 	Car.find({})
-// 		.then(objectsArray => {
-// 			res.json(objectsArray);
-// 		})
-// 		.catch(err => {
-// 			console.log(err);
-// 			res.status(400)
-// 				.json({err});
-// 		})
-// });
-
-
-
-
 //UPDATE(PUT) REQUEST
 // app.put('/cars/:objectId', (req,res) => {
 //     let object = req.body;
@@ -181,21 +153,6 @@ app.get('/requests', (req, res) => {
 // 		})
 // });
 
-//UPDATE(PUT) REQUEST
-// app.put('/dealerships/:objectId', (req,res) => {
-//     let object = req.body;
-// 	let query = {"_id":req.params.objectId}
-
-// 	Dealership.findOneAndUpdate(query, req.body, { runValidators:true })
-// 		.then(updatedObject => {
-// 			res.json(updatedObject);
-// 		})
-// 		.catch(err => {
-// 			console.log(err)
-// 			res.status(400).json({err});
-// 		})
-// });
-
 
 //DELETE REQUEST
 // app.delete('/cars/:objectId', (req,res) =>{
@@ -203,20 +160,6 @@ app.get('/requests', (req, res) => {
 //     console.log("delete route working")
 
 // 	Car.findOneAndRemove({"_id":req.params.objectId})
-// 		.then(object => {
-// 			res.json({deleted:true});
-// 		})
-// 		.catch(err => {
-// 			console.log(err);
-// 			res.status(400)
-// 				.json({err});
-// 		})
-// });
-
-//DELETE REQUEST
-// app.delete('/dealerships/:objectId', (req,res) =>{
-//     let object = req.body;
-// 	Dealership.findOneAndRemove({"_id":req.params.objectId})
 // 		.then(object => {
 // 			res.json({deleted:true});
 // 		})

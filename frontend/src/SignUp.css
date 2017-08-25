@@ -16,6 +16,9 @@ label.active {
     border: 2px solid #3AB795;
     padding: 5%;
     box-shadow: 5px 5px 5px #75B9BE;
+    background: white;
+    opacity: 0.8;
+    margin: auto;
 }
 
 #back {

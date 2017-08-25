@@ -6,6 +6,12 @@
      position: relative;
  }
 
+ #cancel {
+     bottom: -5vh;
+     left: 13vw;
+     position: relative;
+ }
+
  #menu {
      position: relative;
      left: 83%;
@@ -43,11 +49,13 @@
  }
 
  .bigBox {
-     margin: 0% 5% 0% 5%;
+     margin: 4% 5% 0% 5%;
      box-shadow: 5px 5px 5px #A8CCC9;
-     border: 2px solid #75B9BE;
+     border: 3px solid #75B9BE;
      padding: 2% 2% 3% 2%;
      border-radius: 1%;
+     background: ivory;
+     opacity: 0.9;
  }
 
  #icon {

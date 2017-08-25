@@ -183,7 +183,7 @@ class SignUp extends Component {
                             waves='light'>
                             back
                                 <Icon left>
-                                navigate_before
+                                    navigate_before
                                 </Icon>
                         </Button>
 

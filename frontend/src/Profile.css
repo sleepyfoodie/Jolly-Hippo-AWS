@@ -5,111 +5,149 @@
     color: red
 }
 
+.profileBox {
+    position: relative;
+    display: inline-block;
+    /* border: black solid 1px; */
+    width: 23%;
+    vertical-align: top;
+    text-align: justify;
+    margin: 0% 8% 0% 0%;
+}
 .profilePic {
 	border-radius:80%; 
-    margin: -10% -10% 2% 2%; 
-    /* margin: -4% 0% -5% 2%; */
+    margin: auto;
     overflow: hidden;
-    height: 120px;
-    width: 120px;
+    height: 35vh;
+    width: 470%;
     display: inline-block;
     position: relative;
     top: 30%;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
 }
-
- .profile {
-    margin: 5% 0% 2% 18%;
+.profile {
     position: relative;
     display: inline-block;
-} 
-
-.profilePic:hover {
-  animation: shake 0.52s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+    /* border: black solid 1px; */
+    text-align: left;
+}
+#pic {
+    width: 100%;
 }
 
+.about {
+    position: relative;
+    display: inline-block;
+    border: black solid 0px 0px 0px 1px;
+    width: 69%;
+}
+.reviews {
+    position: relative;
+    display: inline-block;
+    /* border: solid black 1px; */
+}
+.work {
+    position: relative;
+    display: inline-block;
+    /* border: solid black 1px; */
+}
 
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+/* Name title */
+.card .card-title {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Patrick Hand SC', cursive;
 }
 
 img {
     width: 100%;
 }
 
+/* Button */
 #dropdown {
     margin: 2% 2% 0% 0%;
     display: inline-block;
     position: absolute;
     right: 2%;
     top: 2%;
-}
-
-i.material-icons.small {
-    top: 3px;
-    position: relative;
-}
-
- /* button.btn.dropdown-button {
-     opacity: 1.0; 
-}  */
-
-.profileBox {
-    box-shadow: 8px 8px 5px #888888;
-    margin: 2%;
-    padding: 2%;
-    /* background-image: url("./Images/cat-wallpaper.png"); */
     opacity: 0.8;
-    /* background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 100%; */
-    background: linear-gradient(to right, #a8ccc9 , white);
-    /* background-color: #b2b2b2; */
-    color: #00241b;
-    border-radius: 3%;
-    font-size: 3.0vh;
-    text-shadow: 3px 3px 5px #a8ccc9;
+}
+.btn, .btn-large {
+    background-color: #b5ffe1;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 150%;
+}
+.btn:hover, .btn-large:hover {
+    animation: shake 0.52s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    background-color: #87bba2;
+}
+a {
+    color:#00241b;
+}
+
+h5 {
+    font-size: 2vh;
     font-family: 'Patrick Hand SC', cursive;
-    box-shadow: 0px 0px 30px #d5d3d3, 0px 0px 30px #d5d3d3;
 }
 
-.commentBox {
-    box-shadow: 8px 8px 5px #888888;
+h4 {
+    letter-spacing: 1.6vw;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+/* animation */
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+/* the entire card */
+.card.small {
     margin: 2%;
-    padding: 2%;
-     background-image: url("./Images/cat-wallpaper.png"); 
-    opacity: 0.8;
-     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 100%; 
+    box-shadow: 8px 8px 5px #888888;
     /* background: linear-gradient(to right, #a8ccc9 , white); */
-     background-color: #b2b2b2; 
-    color: #00241b;
-    border-radius: 3%;
-    font-size: 3.0vh;
-    text-shadow: 3px 3px 5px #a8ccc9;
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: san-serif;
     box-shadow: 0px 0px 30px #d5d3d3, 0px 0px 30px #d5d3d3;
+    height: 200vh;
+    overflow: scroll;
 }
 
-.name {
-    font-weight: bold;
-    font-size: 500%;
+/* top logo image, how stretched it is*/
+.card .card-image img {
+    height: 60vh;
 }
+.card.small .card-image+.card-content, .card.medium .card-image+.card-content, .card.large .card-image+.card-content {
+    max-height: 100%;
+}
+

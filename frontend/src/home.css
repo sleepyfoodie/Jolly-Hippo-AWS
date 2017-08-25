@@ -1,7 +1,3 @@
-/*body {
-  background-image: "Baby-Chicks-Icon6.png";
-}
-  */
 .App {
   text-align: center;
 }
@@ -12,7 +8,7 @@ h2 {
   font-family: 'Sedgwick Ave Display', cursive;
 }
 
-h5 {
+#help {
   font-style: italic;
   text-shadow: 3px 3px 2px #75b9be;
   font-family: 'Sedgwick Ave Display', cursive;
@@ -21,7 +17,7 @@ h5 {
   animation: App-logo-spin infinite 20s linear; 
   height: 20vh;
   width: 15%;
-  
+
   -webkit-border-radius: 50%/60% 60% 40% 40%;
 	-moz-border-radius: 50%/60% 60% 40% 40%;
 	border-radius: 50%/60% 60% 40% 40%;
@@ -48,11 +44,11 @@ h5 {
 }
 .A {
   width: 17%;
-  margin: 2% 1% 0% 0%;
+  margin: 2% 2% 0% 0%;
 }
 .B {
   width: 10%;
-  margin: 2% 1% 0% 1%;
+  margin: 2% 5% 0% 2%;
 }
 .C {
   width: 7%;
@@ -61,6 +57,10 @@ h5 {
 
 .end {
   display: block;
+}
+
+.collapsible-header {
+  opacity: 0.7;
 }
 
 .footer:hover {
@@ -122,3 +122,17 @@ i.material-icons {
   top: 4px;
   display: inline-block;
 }
+
+#blob {
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+::-webkit-scrollbar              { background-color: black; width: 2px; }
+::-webkit-scrollbar-button       { background-color: black; width: 2px; }
+::-webkit-scrollbar-track        { background-color: black; width: 2px;}
+::-webkit-scrollbar-track-piece  { background-color: black; width: 2px;}
+::-webkit-scrollbar-thumb        { background-color: black; width: 2px;}
+::-webkit-scrollbar-corner       { background-color: black; width: 2px;}
+::-webkit-resizer                { background-color: black; width: 2px;}

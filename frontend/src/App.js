@@ -12,7 +12,8 @@ class App extends Component {
       open: false,
       email: "",
       password: "",
-      show: false
+      show: false,
+      submissions: [] 
     }
 
     this.toSignUp = this.toSignUp.bind(this)
@@ -70,7 +71,8 @@ class App extends Component {
           signup: this.toSignUp,
           handleChange: this.handleChange,
           password: this.state.password,
-          toProfile: this.toProfile
+          toProfile: this.toProfile,
+          submission: this.state.submission
         })}
       </div>
     );

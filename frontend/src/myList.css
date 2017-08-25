@@ -6,72 +6,13 @@
 
 #pic {
     width: 20%;
-    border-radius: 90%;
+	border-radius: 90%;
 } 
 
-#eggOne {
-    background-color: #3ab795;
+img {
+	text-align: center;
 }
 
-#eggTwo {
-    background-color: #87bba2;
-}
-
-#eggThree {
-    background-color: #7cf0bd;
-}
-
-#eggFour {
-    background-color: #75b9b3;
-}
-
-#eggFive {
-    background-color: #a8ccc9;
-}
-
-
-.egg {
-    transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-	width: 138px;
-	height: 200px;
-    margin: 20px auto 30px; 
-    display: inline-block;
-    position: relative;
-
-	-webkit-border-radius: 50%/60% 60% 40% 40%;
-	-moz-border-radius: 50%/60% 60% 40% 40%;
-	border-radius: 50%/60% 60% 40% 40%;
-
-	-webkit-box-shadow: 0px 0px 30px #D5D3D3, 0px 0px 30px #D5D3D3;
-	-moz-box-shadow: 0px 0px 30px #D5D3D3, 0px 0px 30px #D5D3D3;
-	box-shadow: 0px 0px 30px #D5D3D3, 0px 0px 30px #D5D3D3;
-}
-
-/* .egg:hover {
-  animation: shake 0.52s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-} */
-
-/* @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-} */
 
 @keyframes float {
 	0% {
@@ -86,4 +27,32 @@
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
+}
+
+.data {
+    margin: 10%;
+}
+
+/* div {
+	text-align: justify;
+} */
+
+#submit {
+	left: 3vw;
+}
+
+.collapsible-body {
+	background: linear-gradient(#b5ffe1, #93e5ab);
+}
+
+.collapsible-header {
+	opacity: 0.9;
+}
+
+body {
+	background: linear-gradient(#4DB7CC, #C4E0E2);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
